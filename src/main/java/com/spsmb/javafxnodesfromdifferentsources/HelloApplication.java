@@ -17,6 +17,7 @@ public class HelloApplication extends Application {
         fxmlManager.setView("ViewOne", "JavaFX Application - View One");
         fxmlManager.setAppIcon("image.jpg");
         fxmlManager.setStyleSheet("style.css");
+        fxmlManager.printViews();
         stage.show();
     }
 

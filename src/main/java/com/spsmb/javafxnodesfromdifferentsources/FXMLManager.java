@@ -24,7 +24,6 @@ import java.util.stream.Stream;
 public class FXMLManager {
 
     private static final FXMLManager fxmlManager = new FXMLManager();
-    private FXMLLoader loader = new FXMLLoader();
     private Stage stage;
     private Class<?> mainClass;
     private boolean changeTitleOnLoad = true;
@@ -109,5 +108,10 @@ public class FXMLManager {
 
     public Object getController(String name) {
         return views.get(name).getController();
+    }
+
+    public void printViews() {
+        System.out.println("Loaded views:");
+        views.keySet().forEach(System.out::println);
     }
 }
