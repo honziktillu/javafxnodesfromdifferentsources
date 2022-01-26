@@ -107,7 +107,7 @@ public class FXMLManager {
         }
     }
 
-    public <T> Object getController(String name) {
+    public Object getController(String name) {
         return views.get(name).getController();
     }
 }
