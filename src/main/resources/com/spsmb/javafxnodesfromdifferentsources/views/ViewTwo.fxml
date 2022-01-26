@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spsmb.javafxnodesfromdifferentsources.ViewTwo">
+   <children>
+      <Button fx:id="myButton" layoutX="267.0" layoutY="261.0" mnemonicParsing="false" onAction="#changeScene" text="View One" />
+      <Label fx:id="myLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="128.0" prefHeight="17.0" prefWidth="149.0" text="View Two" />
+      <Button layoutX="226.0" layoutY="188.0" mnemonicParsing="false" onAction="#changeLabel" text="Change label in view one" />
+      <Button layoutX="263.0" layoutY="226.0" mnemonicParsing="false" onAction="#resetLabel" text="Reset label" />
+   </children>
+</AnchorPane>
