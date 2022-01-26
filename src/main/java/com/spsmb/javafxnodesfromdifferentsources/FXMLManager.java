@@ -45,13 +45,12 @@ public class FXMLManager {
     }
 
     public void setView(String name) throws IOException {
-        loader.setLocation(mainClass.getResource(name + ".fxml"));
         if (changeTitleOnLoad) {
             stage.setTitle(name);
         }
         initMainLayout();
-        System.out.println(loader.getLocation());
-        mainLayout = loader.load();
+        mainLayout.getChildren().clear();
+        mainLayout.getChildren().add(views.get(name).getRoot());
         Platform.runLater(() -> mainLayout.requestFocus());
     }
 
@@ -60,7 +59,6 @@ public class FXMLManager {
         initMainLayout();
         mainLayout.getChildren().clear();
         mainLayout.getChildren().add(views.get(name).getRoot());
-        //ViewOne a = views.get(name).getController();
         Platform.runLater(() -> mainLayout.requestFocus());
     }
 
