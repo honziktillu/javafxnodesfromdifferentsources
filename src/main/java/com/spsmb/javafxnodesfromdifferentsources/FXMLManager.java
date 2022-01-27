@@ -61,7 +61,6 @@ public class FXMLManager {
         Platform.runLater(() -> mainLayout.requestFocus());
     }
 
-
     public void setTitleChangeOnLoad(boolean shouldBeChangedOnLoad) {
         changeTitleOnLoad = shouldBeChangedOnLoad;
     }
